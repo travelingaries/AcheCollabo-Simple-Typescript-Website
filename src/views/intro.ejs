@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/stylesheets/reset.css">
+    <link rel="stylesheet" href="/stylesheets/intro.css">
+    <link rel="stylesheet" href="/stylesheets/layout.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/a5ace50b2e.js" crossorigin="anonymous"></script>
+    <script src="/js/jquery.touchSwipe.min.js"></script>
+    <title>낭만역사 사가정</title>
+</head>
+<body>
+<header>
+    <div class="logo">
+        <img src="/img/gnb_logo02.png" alt="">
+        <img src="/img/gnb_logo01.png" onclick="location.href='/'" alt="">
+        <i class="fas fa-bars nav_toggle_btn"></i>
+    </div>
+    <ul class="nav">
+        <div>
+            <li class="nav_li"><a href="/cate01/video">작품</a></li>
+        </div>
+        <div>
+            <li class="nav_li"><a href="/cate02/intro">소개</a></li>
+        </div>
+        <div>
+            <li class="nav_li"><a href="/cate03/workshop">아카이브</a></li>
+        </div>
+    </ul>
+    <ul class="sub_nav">
+        <li>
+            <ul>
+                <li class="mobile nav_category">작품</li>
+                <li class="sub_nav_li sub_nav1"><a href="/cate01/video">비디오 아트</a></li>
+                <li class="sub_nav_li sub_nav1"><a href="/cate01/install">설치 미술</a></li>
+                <li class="sub_nav_li sub_nav1"><a href="/cate01/3d">3D</a></li>
+            </ul>
+        </li>
+        <li>
+            <ul>
+                <li class="mobile nav_category">소개</li>
+                <li class="sub_nav_li sub_nav2"><a href="/cate02/intro">프로젝트 개요</a></li>
+                <li class="sub_nav_li sub_nav2"><a href="/cate02/cooperation">프로젝트 협력</a></li>
+            </ul>
+        </li>
+        <li>
+            <ul>
+                <li class="mobile nav_category">아카이브</li>
+                <li class="sub_nav_li sub_nav3"><a href="/cate03/workshop">낭만을 즐기는 방법 워크숍</a></li>
+                <li class="sub_nav_li sub_nav3"><a href="/cate03/history">활동기록</a></li>
+            </ul>
+        </li>
+    </ul>
+</header>
+<!-- header -->
+<main>
+    <section class="top">
+        <img src="/img/circle.png" alt="">
+        <div id="top_vertical"></div>
+        <div class="top_horizontal"></div>
+        <div class="top_horizontal"></div>
+    </section>
+    <!-- top -->
+
+    <section class="logo_circle">
+        <div class="logo1">
+        </div>
+        <div class="logo2">
+        </div>
+    </section>
+    <!-- logo_circle - 합쳐지는 원 두 개 -->
+
+    <section class="main_logo">
+        <img src="/img/menu4/sec01/sec01_logo.png" alt="">
+        <h1 class="pc"><span>아X채 콜라보</span>는 비주얼 디렉팅 및 시각적 공간을 구현하는 <span>'아르떼나잇'</span> 팀과<br>
+            워크숍을 기반으로 비디오 아트를 제작하는 <span>'채집망 프로젝트'</span>의 공동창작 콜라보레이션이다.</h1>
+        <h1 class="mobile"><span>아X채 콜라보</span>는 비주얼 디렉팅 및 <br>시각적 공간을 구현하는 <span>'아르떼나잇'</span> 팀과<br>
+            워크숍을 기반으로 비디오 아트를 제작하는<br> <span>'채집망 프로젝트'</span>의 공동창작 콜라보레이션이다.</h1>
+        <button>아채콜라보 팀 소개</button>
+        <img id="people_toggle_icon" style="cursor:pointer;" src="/img/menu4/sec01/sec01_btn_s_icon02.png" alt="">
+    </section>
+    <!-- main_logo - 아채콜라보 메인 로고 -->
+
+    <section class="pop hide" id="pop1">
+        <img onclick="closePopup1()" src="/img/menu4/sec01/sec01_pop_btn.png" alt="">
+        <img src="/img/menu4/sec01/sec01_pop_img01.jpg" alt="">
+    </section>
+    <!-- pop1 - 첫번째 팝업 (신현지 대표님 팝업) -->
+
+    <section class="pop hide" id="pop2">
+        <img onclick="closePopup2()" src="/img/menu4/sec01/sec01_pop_btn.png" alt="">
+        <img src="/img/menu4/sec01/sec01_pop_img02.jpg" alt="">
+    </section>
+    <!-- pop2 - 두번째 팝업 (황혜준 대표님 팝업) -->
+
+    <section class="people">
+        <h1>아 <span>x</span> 채 콜라보 팀 소개</h1>
+        <div class="chief">
+            <div class="chief_box">
+                <div>
+                    <h1>신현지 작가</h1>
+                    <img onclick="showPopup1()" src="/img/menu4/sec01/sec01_btn_icon01.png" alt="">
+                </div>
+                <h1>공동대표</h1>
+            </div>
+            <div class="chief_box">
+                <div>
+                    <h1>황혜준 작가</h1>
+                    <img onclick="showPopup2()" src="/img/menu4/sec01/sec01_btn_icon01.png" alt="">
+                </div>
+                <h1>공동대표</h1>
+            </div>
+        </div>
+        <div class="member">
+            <div class="member_title">
+                <h1>본부</h1>
+                <img src="/img/menu4/sec01/sec01_btn_icon02.png" alt="">
+            </div>
+            <div class="member_box">
+                <div>
+                    <h1>워크숍 PM</h1>
+                    <p>이준옥</p>
+                </div>
+                <div>
+                    <h1>설치 PM</h1>
+                    <p>김서연</p>
+                </div>
+                <div>
+                    <h1>아카이브 PM</h1>
+                    <p>조은아</p>
+                </div>
+                <div>
+                    <h1>행정 PM</h1>
+                    <p>진 주</p>
+                </div>
+                <div>
+                    <h1>행정 PM</h1>
+                    <p>안숙자</p>
+                </div>
+            </div>
+        </div>
+        <div class="member">
+            <div class="member_title">
+                <h1>워크숍</h1>
+                <img src="/img/menu4/sec01/sec01_btn_icon02.png" alt="">
+            </div>
+            <div class="member_box">
+                <div>
+                    <h1>예술강사 - 시인</h1>
+                    <p>이소연</p>
+                </div>
+                <div>
+                    <h1>예술강사 - 안무가1</h1>
+                    <p>조경철</p>
+                </div>
+                <div>
+                    <h1>예술강사 - 안무가2</h1>
+                    <p>정찬일</p>
+                </div>
+                <div>
+                    <h1>워크숍 디자이너</h1>
+                    <p>임민수</p>
+                </div>
+            </div>
+        </div>
+        <div class="member">
+            <div class="member_title">
+                <h1>비디오 아트</h1>
+                <img src="/img/menu4/sec01/sec01_btn_icon02.png" alt="">
+            </div>
+            <div class="member_box">
+                <div>
+                    <h1>촬영감독 A</h1>
+                    <p>심원보</p>
+                </div>
+                <div>
+                    <h1>촬영감독 B - 1</h1>
+                    <p>박태영</p>
+                </div>
+                <div>
+                    <h1>촬영감독 B - 2</h1>
+                    <p>조영주</p>
+                </div>
+                <div>
+                    <h1>촬영보조</h1>
+                    <p>홍민혁</p>
+                </div>
+                <div>
+                    <h1>후반 사운드 믹싱</h1>
+                    <p>김활빈</p>
+                </div>
+                <div>
+                    <h1>조연출 1</h1>
+                    <p>김규년</p>
+                </div>
+                <div>
+                    <h1>조연출 2</h1>
+                    <p>전수현</p>
+                </div>
+                <div>
+                    <h1>현장 사운드 감독</h1>
+                    <p>윤관희</p>
+                </div>
+                <div>
+                    <h1>콘티 작가</h1>
+                    <p>옥세영</p>
+                </div>
+                <div>
+                    <h1>사운드 아트 1</h1>
+                    <p>이진화</p>
+                </div>
+                <div>
+                    <h1>사운드 아트 2</h1>
+                    <p>이주연</p>
+                </div>
+            </div>
+        </div>
+        <div class="member">
+            <div class="member_title">
+                <h1>조형물 디자인</h1>
+                <img src="/img/menu4/sec01/sec01_btn_icon02.png" alt="">
+            </div>
+            <div class="member_box">
+                <div>
+                    <h1>디자인 PM</h1>
+                    <p>노송희</p>
+                </div>
+                <div>
+                    <h1>그래픽 디자이너 1</h1>
+                    <p>이민선</p>
+                </div>
+                <div>
+                    <h1>그래픽 디자이너 2</h1>
+                    <p>김경연</p>
+                </div>
+                <div>
+                    <h1>3D 그래픽 디자이너</h1>
+                    <p>김태환</p>
+                </div>
+                <div>
+                    <h1>조형물 디자인 자문</h1>
+                    <p>김기라</p>
+                </div>
+                <div>
+                    <h1>모션 그래픽 디자이너</h1>
+                    <p>정유지</p>
+                </div>
+            </div>
+        </div>
+        <div class="member">
+            <div class="member_title">
+                <h1>아카이브</h1>
+                <img src="/img/menu4/sec01/sec01_btn_icon02.png" alt="">
+            </div>
+            <div class="member_box">
+                <div>
+                    <h1>웹디자이너</h1>
+                    <p>장유선</p>
+                </div>
+                <div>
+                    <h1>개발자</h1>
+                    <p>한승오</p>
+                </div>
+                <div>
+                    <h1>북 디자이너</h1>
+                    <p>조현지</p>
+                </div>
+                <div>
+                    <h1>영문 번역 및 글</h1>
+                    <p>한임연</p>
+                </div>
+                <div>
+                    <h1>아카이브 사진가 1</h1>
+                    <p>김승현</p>
+                </div>
+                <div>
+                    <h1>아카이브 사진가 2</h1>
+                    <p>손대윤</p>
+                </div>
+                <div>
+                    <h1>자문 및 원고</h1>
+                    <p>김맑음</p>
+                </div>
+                <div>
+                    <h1>전시 기획자</h1>
+                    <p>김선문</p>
+                </div>
+                <div>
+                    <h1>전시 마케터</h1>
+                    <p>배유진</p>
+                </div>
+            </div>
+        </div>
+        <div onclick="$('.people').hide();" class="close_btn">
+            <img src="/img/menu4/sec01/sec01_btn_s_icon01.png" alt="">
+            <h2>CLOSE</h2>
+        </div>
+    </section>
+    <!-- people - 참여 멤버들 -->
+
+    <section class="pop hide" id="pop3">
+        <img onclick="closePopup3()" src="/img/menu4/sec01/sec01_pop_btn.png" alt="">
+        <div class="pop3_box">
+            <img src="/img/menu4/sec02/pop3_top.png" alt="">
+            <img src="/img/menu4/sec02/pop3_img01.png" class="workshop_poster" alt="">
+        </div>
+        <div class="pop3_box">
+            <img src="/img/menu4/sec02/pop3_top.png" alt="">
+            <img src="/img/menu4/sec02/pop3_img02.png" class="workshop_poster" alt="">
+        </div>
+        <h1><span>&lt;낭만을 즐기는 방법 워크숍&gt;</span> 포스터</h1>
+    </section>
+    <!-- pop3 - 세 번째 팝업 (워크숍 팝업) -->
+
+    <section class="banner1" id="banner_1">
+        <div class="banner_padding"></div>
+        <div class="border" id="banner_border1"></div>
+        <img id="banner_circle1" src="/img/circle.png" alt="">
+        <h1>낭만을 즐기는 방법 워크숍</h1>
+        <div class="banner_icon">
+            <div class="icon_box">
+                <img src="/img/menu4/sec02/sec02_icon01.png" alt="">
+                <h2>낭만적 감성</h2>
+            </div>
+            <div class="icon_box">
+                <img src="/img/menu4/sec02/sec02_icon02.png" alt="">
+                <h2>세대 공감의 감성</h2>
+            </div>
+            <div class="icon_box">
+                <img src="/img/menu4/sec02/sec02_icon03.png" alt="">
+                <h2>일상 속 즐거움</h2>
+            </div>
+        </div>
+        <div class="icon_order mobile">
+            <button></button>
+            <button></button>
+            <button></button>
+        </div>
+        <p>중랑구민들만의 <span>낭만적 감성, 세대 공감의 감성, 일상의 즐거움</span>을 깨우고자 기획된 "<span>낭만을 즐기는 방법</span>" 워크숍은 중랑구민 59명과 함께 진행되었다.<br>
+            중랑구에서의 그들의 삶과 기억, 지역 문화와 낭만에 대해 이야기하고, 이를 토대로 창작된 비디오 아트와 설치 미술이 사가정 역사 내 공공 미술을 구현했다.</p>
+        <button onclick="showPopup3()">워크숍 자세히 보기</button>
+    </section>
+    <!-- banner1 -->
+
+    <section class="banner2" id="banner_2">
+        <div class="banner_padding"></div>
+        <div class="border" id="banner_border2"></div>
+        <img id="banner_circle2" src="/img/circle_line.png" alt="">
+        <h1>낭만역사 사가정</h1>
+        <div class="banner_icon">
+            <div class="icon_box">
+                <img src="/img/menu4/sec03/sec03_icon01.png" alt="">
+                <h2>공공 미술 작품 설치</h2>
+            </div>
+            <div class="icon_box">
+                <img src="/img/menu4/sec03/sec03_icon02.png" alt="">
+                <h2>비디오 아트 작품</h2>
+            </div>
+            <div class="icon_box">
+                <img src="/img/menu4/sec03/sec03_icon03.png" alt="">
+                <h2>프로젝트 아카이빙</h2>
+            </div>
+        </div>
+        <div class="icon_order mobile">
+            <button></button>
+            <button></button>
+            <button></button>
+        </div>
+        <p>공동창작 프로젝트 "<span>낭만 역사 사가정</span>"은 <span>3개월 간의 워크숍 및 비디오 아트 작품</span>과 <span>2개월 간의 공공 미술 작품 설치</span>,<br>
+            그리고<span>전체 프로젝트 진행 과정에 대해 아카이빙</span>이 이루어지는 프로젝트이다. 커뮤니티 아트 및 영상을 '<span>지하철</span>'이라는 구민들의 삶과 밀접한 공간에 담아낸다.<br>
+            중랑구민들의 보이지 않는 공동체성을 교집합으로 이어 창작자와 중랑구민들이 함께 '<span>공동의 기념비</span>'를 세운다.</p>
+    </section>
+    <!-- banner2 -->
+
+    <section class="banner3" id="banner_3">
+        <div class="banner_padding"></div>
+        <div class="border" id="banner_border3"></div>
+        <img id="banner_circle3" src="/img/circle.png" alt="">
+        <h1>프로젝트 대상지 특성</h1>
+        <div class="banner_icon">
+            <div class="icon_box">
+                <img src="/img/menu4/sec04/sec04_icon01.png" alt="">
+                <h2>자연과 도시의 조화</h2>
+            </div>
+            <div class="icon_box">
+                <img src="/img/menu4/sec04/sec04_icon02.png" alt="">
+                <h2>다양한 연령층 거주</h2>
+            </div>
+            <div class="icon_box">
+                <img src="/img/menu4/sec04/sec04_icon03.png" alt="">
+                <h2>다양한 지역문화</h2>
+            </div>
+        </div>
+        <div class="icon_order mobile">
+            <button></button>
+            <button></button>
+            <button></button>
+        </div>
+        <p>중랑구는 <span>자연과 도시의 풍경이 조화</span>를 이루며, 천천히 시간이 흘러가는 듯한 매력이 있는 지역이다.<br>
+            중랑구에는 <span>다양한 연령층</span>이 살며, 중랑구에서의 그들의 삶과 기억, 중랑구만의 <span>지역 문화가</span> 존재한다.</p>
+    </section>
+    <!-- banner3 -->
+
+</main>
+<!-- main -->
+
+<footer>
+    <section class="footer_top">
+        <div class="footer_top_left">
+            <img src="/img/footer_logo01.png" alt="">
+            <h1>BUSINESS EMAIL</h1>
+            <h2>achecollabo@naver.com</h2>
+        </div>
+        <div class="footer_top_right">
+            <div class="footer_top_right_box">
+                <h1>DIRECTOR</h1>
+                <h2>Hwang Hye-jun<br>Shin Hyunji</h2>
+            </div>
+            <div class="footer_top_right_box">
+                <h1>TEL</h1>
+                <h2>010-3349-3580<br>010-3677-3436</h2>
+            </div>
+            <div class="footer_top_right_box">
+                <h1>E-MAIL</h1>
+                <h2>heyjunhwang@gmail.com<br>chezipmang@gmail.com</h2>
+            </div>
+        </div>
+    </section>
+    <section class="footer_bottom">
+        <div class="footer_bottom_left">
+            <h3>100, Cheonggyecheon-ro, Jung-gu, Seoul, Republic of Korea</h3>
+            <h4>COPYRIGHT © ACHECOLLABO.INC.ALL RIGHTS RESERVED</h4>
+        </div>
+        <div class="footer_bottom_right">
+            <img src="/img/footer_logo02.png" alt="">
+        </div>
+    </section>
+</footer>
+<!-- footer -->
+<script src="/js/top_nav.js"></script>
+<script src="/js/intro.js"></script>
+</body>
+</html>

@@ -1,0 +1,563 @@
+
+
+@keyframes card{
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    60% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+.card_move {
+    animation: card 1s forwards;
+}
+
+@keyframes scroll {
+    0% {
+        height: 0;
+    }
+    100% {
+        height: 375px;
+    }
+}
+@keyframes scroll2 {
+    0% {
+        height: 0;
+    }
+    100% {
+        height: 200px;
+    }
+}
+@keyframes show {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes video_flow {
+    0% {
+        transform: translateX(0);
+    } 
+    100% {
+        transform: translateX(-120vw);
+    }
+}
+@keyframes install_flow {
+    0% {
+        transform: translateX(-120vw);
+    } 
+    100% {
+        transform: translateX(0);
+    }
+}
+.scrolled {
+    animation: scroll 1s forwards;
+}
+.scrolled2 {
+    animation: scroll2 1s forwards;
+}
+.shown {
+    animation: show 1s forwards;
+}
+
+.title {
+    width: 100%;
+    padding: 150px 0 184px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid black;
+}
+.title h1 {
+    font-size: 55px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.title h2 {
+    font-size: 25px;
+    text-align: center;
+}
+.blank {
+    position: relative;
+    height: 375px;
+}
+.blank > .border {
+    margin: 0 auto;
+    width: 20px;
+    height: 0;
+    border-left: 1px solid black;
+    transform: translateX(10px);
+}
+.blank > img {
+    position: absolute;
+    left: calc(50vw - 18px);
+    top: 375px;
+}
+#blank1_img {
+    opacity: 0;
+}
+#blank2_img {
+    top: 200px;
+    opacity: 0;
+}
+
+.workshop {
+    margin-top: 74px;
+    position: relative;
+    margin-bottom: 100px;
+    text-align: center;
+}
+.workshop h1 {
+    font-size: 45px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+.photo_box {
+    width: 80vw;
+    height: calc(55vw + 50px);
+    margin: auto;
+}
+.photo_box > img {
+    object-fit: contain;
+    width: 80vw;
+    height: 55vw;
+    display: block;
+    margin: 0 auto 30px auto;
+    cursor: pointer;
+}
+.photo_box > h1 {
+    font-size: 20px;
+}
+#workshop_prev {
+    position: absolute;
+    top: calc(50% - 50px);
+    margin-top: -84px;
+    width: 104px;
+    height: 169px;
+    left: 0;
+    cursor: pointer;
+}
+#workshop_next {
+    position: absolute;
+    top: calc(50% - 50px);
+    margin-top: -84px;
+    width: 104px;
+    height: 169px;
+    right: 0;
+    cursor: pointer;
+}
+
+/* 여기부터 popup창 */
+.pop {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: white;
+    z-index: 5;
+}
+.pop > h1 {
+    margin: 130px 0 15px 0;
+    font-size: 35px;
+    font-weight: bold;
+}
+.pop > h2 {
+    font-size: 20px;
+}
+.pop.hide {
+    display: none;
+}
+.pop .pop_close {
+    position: absolute;
+    top: 5%;
+    width: 30px;
+    right: 10%;
+    cursor: pointer;
+}
+.pop .pop_main {
+    display: block;
+    margin: auto;
+    width: 45vw;
+    object-fit: contain;
+}
+
+.pop .img_box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 85%;
+}
+.img_box img {
+    width: 15%;
+    height: 20vh;
+    object-fit: contain;
+    cursor: pointer;
+}
+.pop .img_nav {
+    width: 20px;
+    height: 35px;
+    margin: 0 20px;
+}
+
+.field {
+    width: 100%;
+    padding-bottom: 100px;
+    margin-bottom: 180px;
+    position: relative;
+    overflow: hidden;
+    height: 1700px;
+}
+.field > h1 {
+    font-size: 55px;
+    text-align: center;
+    font-weight: bold;
+    margin: 74px 0 30px 0;
+}
+.field_card {
+    width: 220vw;
+    position: relative;
+}
+.video_card {
+    animation: video_flow 13s linear infinite forwards;
+}
+.video_card:hover {
+    opacity: 0.5;
+}
+.install_card {
+    animation: install_flow 13s linear infinite forwards;
+}
+.install_card:hover {
+    opacity: 0.5;
+}
+.field_card img {
+    width: 800px;
+    position: absolute;
+    cursor: pointer;
+}
+.video_card img {
+    top: 100px;
+}
+.install_card img {
+    top: 850px;
+}
+.field_card img:nth-child(2) {
+    left: 600px;
+}
+.field_card img:nth-child(3) {
+    left: 1200px;
+}
+.field_card img:nth-child(4) {
+    left: 1800px;
+}
+.field_card img:nth-child(5) {
+    left: 2400px;
+}
+.field_card img:nth-child(6) {
+    left: 3000px;
+}
+.field_card img:nth-child(7) {
+    left: 3600px;
+}
+.field_card img:nth-child(odd) {
+    transform: rotate(10deg);
+}
+.field_card img:nth-child(even) {
+    transform: rotate(-10deg);
+}
+#icon1 {
+    position: absolute;
+    top: 100px;
+    right: 5vw;
+}
+#icon2 {
+    position: absolute;
+    bottom: 0;
+    left: 5vw;
+}
+
+.interview {
+    margin: 74px 0 160px 0;
+}
+.interview > h1 {
+    font-size: 45px;
+    font-weight: bold;
+    text-align: center;
+}
+.interviewslider {
+    width: 80vw;
+    margin-left: 10vw;
+    padding-top: 100px;
+}
+.interview_list {
+    width: 80vw;
+    height: 600px;
+    margin: auto;
+}
+.interview_box {
+    width: 25vw;
+    margin-right: 1vw;
+    display: inline-block;
+}
+.interview_box .interview_title {
+    width: 100%;
+    height: 285px;
+    background-color: #dddddd;
+}
+.interview_desc {
+    padding: 30px 20px;
+}
+.interview_desc > h1 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+.interview_desc > p {
+    font-size: 15px;
+    line-height: 1.3;
+    margin-bottom: 30px;
+}
+.interview_desc > span {
+    font-size: 12px;
+    float: right;
+    font-weight: 200;
+}
+
+/* bxslider 수정 */
+.bx-wrapper {
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border: none;
+}
+.bx-wrapper .bx-controls-direction a {
+    position: absolute;
+    top: calc(50% - 50px);
+    margin-top: -84px;
+    outline: 0;
+    width: 104px;
+    height: 169px;
+}
+.bx-wrapper .bx-prev {
+    left: 0;
+    background: url('img/menu7/sec01/sec01_prev.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.bx-wrapper .bx-next {
+    right: 0;
+    background: url('img/menu7/sec01/sec01_next.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.bx-wrapper .bx-next:hover, .bx-wrapper .bx-next:focus {
+    background-position: center;
+}
+
+@media screen and (max-width: 768px) {
+
+
+    @keyframes card{
+        0% {
+            opacity: 1;
+        }
+        50% {
+            opacity: 0;
+        }
+        60% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+    .card_move {
+        animation: card 1s forwards;
+    }
+    
+    @keyframes scroll {
+        0% {
+            height: 0;
+        }
+        100% {
+            height: 105px;
+        }
+    }
+    @keyframes scroll2 {
+        0% {
+            height: 0;
+        }
+        100% {
+            height: 100px;
+        }
+    }
+    @keyframes video_flow {
+        0% {
+            transform: translateX(0);
+        } 
+        100% {
+            transform: translateX(-480vw);
+        }
+    }
+    @keyframes install_flow {
+        0% {
+            transform: translateX(-480vw);
+        } 
+        100% {
+            transform: translateX(0);
+        }
+    }
+
+    .title {
+        padding: 60px 0;
+    }
+    .title h1 {
+        font-size: 35px;
+    }
+    .title h2 {
+        font-size: 15px;
+    }
+
+    .blank {
+        height: 105px;
+    }
+    .blank > img {
+        top: 105px;
+        width: 10px;
+        margin-left: 12.5px;
+    }
+
+    .workshop {
+        margin-bottom: 50px;
+    }
+    .workshop h1 {
+        font-size: 25px;
+    }
+    #workshop_prev {
+        top: 70%;
+        width: 40px;
+        height: 50px;
+    }
+    #workshop_next {
+        top: 70%;
+        width: 40px;
+        height: 50px;
+    }
+
+    #blank2_img {
+        top: 100px;
+    }
+    .field {
+        padding-bottom: 0;
+        margin-bottom: 0;
+        height: 1000px;
+    }
+    .field > h1 {
+        font-size: 25px;
+        margin: 40px 0 30px 0;
+    }
+    .field_card {
+        width: 580vw;
+    }
+    .field_card img {
+        width: 100vw;
+    }
+    .field_card img:nth-child(2) {
+        left: 80vw;
+    }
+    .field_card img:nth-child(3) {
+        left: 160vw;
+    }
+    .field_card img:nth-child(4) {
+        left: 240vw;
+    }
+    .field_card img:nth-child(5) {
+        left: 320vw;
+    }
+    .field_card img:nth-child(6) {
+        left: 400vw;
+    }
+    .field_card img:nth-child(7) {
+        left: 480vw;
+    }
+    .video_card {
+        animation: video_flow 15s linear infinite forwards;
+    }
+    .install_card {
+        animation: install_flow 15s linear infinite forwards;
+    }
+    .install_card img {
+        top: 450px;
+    }
+    #icon1 {
+        width: 130px;
+    }
+    #icon2 {
+        bottom: 18vh;
+        width: 70px;
+    }
+    .pop .pop_main {
+        width: 80vw;
+        margin: 20px 0;
+    }
+    .pop > h1 {
+        margin: 100px 0 15px 0;
+        font-size: 25px;
+    }
+    .pop .pop_close {
+        width: 20px;
+    }
+    .pop .img_box {
+        width: 70%;
+        flex-wrap: wrap;
+    }
+    .pop .img_nav {
+        width: 15px;
+        height: 20px;
+        position: absolute;
+    }
+    .pop .pop_prev {
+        left: 0;
+    }
+    .pop .pop_next {
+        right: 0;
+    }
+    .pop .pop_prev2 {
+        left: 0;
+    }
+    .pop .pop_next2 {
+        right: 0;
+    }
+    .img_box img {
+        width: 22vw;
+        height: 20vw; 
+    }
+
+    .bx-wrapper .bx-controls-direction a {
+        width: 40px;
+        height: 50px;
+    }
+    .interview_box .interview_title {
+        height: 175px;
+    }
+    .interview_desc {
+        padding: 10px 0;
+    }
+}

@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/stylesheets/reset.css">
+    <link rel="stylesheet" href="/stylesheets/layout.css">
+    <link rel="stylesheet" href="/stylesheets/workshop.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/a5ace50b2e.js" crossorigin="anonymous"></script>
+    <title>낭만역사 사가정</title>
+</head>
+<body>
+<header>
+    <div class="logo">
+        <img src="/img/gnb_logo02.png" alt="">
+        <img src="/img/gnb_logo01.png" onclick="location.href='/'" alt="">
+        <i class="fas fa-bars nav_toggle_btn"></i>
+    </div>
+    <ul class="nav">
+        <div>
+            <li class="nav_li"><a href="/cate01/video">작품</a></li>
+        </div>
+        <div>
+            <li class="nav_li"><a href="/cate02/intro">소개</a></li>
+        </div>
+        <div>
+            <li class="nav_li"><a href="/cate03/workshop">아카이브</a></li>
+        </div>
+    </ul>
+    <ul class="sub_nav">
+        <li>
+            <ul>
+                <li class="mobile nav_category">작품</li>
+                <li class="sub_nav_li sub_nav1"><a href="/cate01/video">비디오 아트</a></li>
+                <li class="sub_nav_li sub_nav1"><a href="/cate01/install">설치 미술</a></li>
+                <li class="sub_nav_li sub_nav1"><a href="/cate01/3d">3D</a></li>
+            </ul>
+        </li>
+        <li>
+            <ul>
+                <li class="mobile nav_category">소개</li>
+                <li class="sub_nav_li sub_nav2"><a href="/cate02/intro">프로젝트 개요</a></li>
+                <li class="sub_nav_li sub_nav2"><a href="/cate02/cooperation">프로젝트 협력</a></li>
+            </ul>
+        </li>
+        <li>
+            <ul>
+                <li class="mobile nav_category">아카이브</li>
+                <li class="sub_nav_li sub_nav3"><a href="/cate03/workshop">낭만을 즐기는 방법 워크숍</a></li>
+                <li class="sub_nav_li sub_nav3"><a href="/cate03/history">활동기록</a></li>
+            </ul>
+        </li>
+    </ul>
+</header>
+<!-- header -->
+
+<main>
+    <section class="top">
+        <h1>낭만을 즐기는 방법<br>워크숍</h1>
+        <h2>CREATIVE ART</h2>
+    </section>
+    <!-- top -->
+
+    <section class="week" id="week1">
+        <img class="card card1" onclick="showPopup1()" src="/img/menu6/sec01/sec01_img01.png" alt="">
+        <img class="card card2" onclick="showPopup1()" src="/img/menu6/sec01/sec01_img02.png" alt="">
+        <img class="card card3" onclick="showPopup1()" src="/img/menu6/sec01/sec01_img03.png" alt="">
+        <div class="card_btn_box" id="card_btn_box1" onclick="showPopup1()">
+            <img src="/img/menu6/sec01/btn.png" alt="" class="card_btn">
+            <p>더 보기</p>
+        </div>
+        <div class="blank" id="blank1">
+            <div class="border border_long"></div>
+            <div class="blank_box">
+                <img src="/img/circle.png" alt="">
+                <h1>Week 1</h1>
+                <p>03.15 ~ 03.19</p>
+            </div>
+            <div class="border border_short" style="height: 140px;"></div>
+        </div>
+    </section>
+    <!-- week1  -->
+
+    <section class="week" id="week2">
+        <img class="card card1" onclick="showPopup2()" src="/img/menu6/sec02/sec02_img01.png" alt="">
+        <img class="card card2" onclick="showPopup2()" src="/img/menu6/sec02/sec02_img02.png" alt="">
+        <img class="card card3" onclick="showPopup2()" src="/img/menu6/sec02/sec02_img03.png" alt="">
+        <div class="card_btn_box" id="card_btn_box2" onclick="showPopup2()">
+            <img src="/img/menu6/sec01/btn.png" alt="" class="card_btn">
+            <p>더 보기</p>
+        </div>
+        <div class="blank" id="blank2">
+            <div class="border border_long"></div>
+            <div class="blank_box">
+                <img src="/img/circle.png" alt="">
+                <h1>Week 2</h1>
+                <p>03.22 ~ 03.26</p>
+            </div>
+            <div class="border border_short" style="height: 140px;"></div>
+        </div>
+    </section>
+    <!-- week2 -->
+
+    <section class="week" id="week3">
+        <img class="card card1" onclick="showPopup3()" src="/img/menu6/sec03/sec03_img01.png" alt="">
+        <img class="card card2" onclick="showPopup3()" src="/img/menu6/sec03/sec03_img02.png" alt="">
+        <img class="card card3" onclick="showPopup3()" src="/img/menu6/sec03/sec03_img03.png" alt="">
+        <div class="card_btn_box" id="card_btn_box3" onclick="showPopup3()">
+            <img src="/img/menu6/sec01/btn.png" alt="" class="card_btn">
+            <p>더 보기</p>
+        </div>
+        <div class="blank" id="blank3">
+            <div class="border border_long"></div>
+            <div class="blank_box">
+                <img src="/img/circle.png" alt="">
+                <h1>Week 3</h1>
+                <p>03.29 ~ 04.02</p>
+            </div>
+            <div class="border border_short" id="last_border" style="height: 800px;"></div>
+        </div>
+
+    </section>
+    <!-- week3 -->
+
+    <section class="pop hide" id="pop1">
+        <h1>구민 작품 소개</h1>
+        <h2>03.15 ~ 03.19</h2>
+        <img class="pop_main" src="/img/menu6/w1/w1_1.png" alt="">
+        <img class="pop_close" onclick="closePopup1()" src="/img/menu4/sec01/sec01_pop_btn.png" alt="">
+        <img class="img_nav pop_prev" id="pop_prev" src="/img/menu7/pop/menu7_01_pop_prev.png" alt="">
+        <img class="img_nav pop_next" id="pop_next" src="/img/menu7/pop/menu7_01_pop_next.png" alt="">
+    </section>
+    <!-- pop1 - 첫번째 팝업(week1) -->
+
+    <section class="pop hide" id="pop2">
+        <h1>구민 작품 소개</h1>
+        <h2>03.22 ~ 03.26</h2>
+        <img class="pop_main" src="/img/menu6/w2/w2_1.png" alt="">
+        <img class="pop_close" onclick="closePopup2()" src="/img/menu4/sec01/sec01_pop_btn.png" alt="">
+        <img class="img_nav pop_prev" id="pop_prev2" src="/img/menu7/pop/menu7_01_pop_prev.png" alt="">
+        <img class="img_nav pop_next" id="pop_next2" src="/img/menu7/pop/menu7_01_pop_next.png" alt="">
+    </section>
+    <!-- pop2 - 두번째 팝업(week2) -->
+
+    <section class="pop hide" id="pop3">
+        <h1>구민 작품 소개</h1>
+        <h2>03.29 ~ 04.02</h2>
+        <img class="pop_main" src="/img/menu6/w3/w3_1.png" alt="">
+        <img class="pop_close" onclick="closePopup3()" src="/img/menu4/sec01/sec01_pop_btn.png" alt="">
+        <img class="img_nav pop_prev" id="pop_prev3" src="/img/menu7/pop/menu7_01_pop_prev.png" alt="">
+        <img class="img_nav pop_next" id="pop_next3" src="/img/menu7/pop/menu7_01_pop_next.png" alt="">
+    </section>
+    <!-- pop3 - 세번째 팝업(week3) -->
+
+</main>
+<!-- main -->
+
+<footer>
+    <section class="footer_top">
+        <div class="footer_top_left">
+            <img src="/img/footer_logo01.png" alt="">
+            <h1>BUSINESS EMAIL</h1>
+            <h2>achecollabo@naver.com</h2>
+        </div>
+        <div class="footer_top_right">
+            <div class="footer_top_right_box">
+                <h1>DIRECTOR</h1>
+                <h2>Hwang Hye-jun<br>Shin Hyunji</h2>
+            </div>
+            <div class="footer_top_right_box">
+                <h1>TEL</h1>
+                <h2>010-3349-3580<br>010-3677-3436</h2>
+            </div>
+            <div class="footer_top_right_box">
+                <h1>E-MAIL</h1>
+                <h2>heyjunhwang@gmail.com<br>chezipmang@gmail.com</h2>
+            </div>
+        </div>
+    </section>
+    <section class="footer_bottom">
+        <div class="footer_bottom_left">
+            <h3>100, Cheonggyecheon-ro, Jung-gu, Seoul, Republic of Korea</h3>
+            <h4>COPYRIGHT © ACHECOLLABO.INC.ALL RIGHTS RESERVED</h4>
+        </div>
+        <div class="footer_bottom_right">
+            <img src="/img/footer_logo02.png" alt="">
+        </div>
+    </section>
+</footer>
+<!-- footer -->
+
+<script src="/js/top_nav.js"></script>
+<script src="/js/workshop.js"></script>
+</body>
+</html>

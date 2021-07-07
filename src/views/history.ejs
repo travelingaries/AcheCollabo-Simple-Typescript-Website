@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <link rel="stylesheet" href="/stylesheets/reset.css">
+    <link rel="stylesheet" href="/stylesheets/layout.css">
+    <link rel="stylesheet" href="/stylesheets/history.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <script src="https://kit.fontawesome.com/a5ace50b2e.js" crossorigin="anonymous"></script>
+    <script>
+        $(window).ready(function() {
+            $('.sub_nav').hide();
+        })
+    </script>
+    <title>낭만역사 사가정</title>
+</head>
+<body>
+<header>
+    <div class="logo">
+        <img src="/img/gnb_logo02.png" alt="">
+        <img src="/img/gnb_logo01.png" onclick="location.href='/'" alt="">
+        <i class="fas fa-bars nav_toggle_btn"></i>
+    </div>
+    <ul class="nav">
+        <div>
+            <li class="nav_li"><a href="/cate01/video">작품</a></li>
+        </div>
+        <div>
+            <li class="nav_li"><a href="/cate02/intro">소개</a></li>
+        </div>
+        <div>
+            <li class="nav_li"><a href="/cate03/workshop">아카이브</a></li>
+        </div>
+    </ul>
+    <ul class="sub_nav">
+        <li>
+            <ul>
+                <li class="mobile nav_category">작품</li>
+                <li class="sub_nav_li sub_nav1"><a href="/cate01/video">비디오 아트</a></li>
+                <li class="sub_nav_li sub_nav1"><a href="/cate01/install">설치 미술</a></li>
+                <li class="sub_nav_li sub_nav1"><a href="/cate01/3d">3D</a></li>
+            </ul>
+        </li>
+        <li>
+            <ul>
+                <li class="mobile nav_category">소개</li>
+                <li class="sub_nav_li sub_nav2"><a href="/cate02/intro">프로젝트 개요</a></li>
+                <li class="sub_nav_li sub_nav2"><a href="/cate02/cooperation">프로젝트 협력</a></li>
+            </ul>
+        </li>
+        <li>
+            <ul>
+                <li class="mobile nav_category">아카이브</li>
+                <li class="sub_nav_li sub_nav3"><a href="/cate03/workshop">낭만을 즐기는 방법 워크숍</a></li>
+                <li class="sub_nav_li sub_nav3"><a href="/cate03/history">활동기록</a></li>
+            </ul>
+        </li>
+    </ul>
+</header>
+<!-- header -->
+
+<main>
+    <section class="title">
+        <h1>활동 기록</h1>
+        <h2>PROJECT HISTORY</h2>
+    </section>
+    <!-- title -->
+
+    <section class="blank" id="blank1">
+        <div class="border"></div>
+        <img id="blank1_img" src="/img/circle.png" alt="">
+    </section>
+    <!-- blank1 내려오는 선 첫번째  -->
+
+    <section class="workshop">
+        <h1>워크샵 현장</h1>
+        <div class="photo_box">
+            <img onclick="showPopup1()" src="/img/menu7/sec01/sec01_img1.png" alt="">
+            <h1>1 / 11</h1>
+        </div>
+        <img id="workshop_prev" onclick="photo_prev()" src="/img/menu2/sec03/sec03_prev.png" alt="">
+        <img id="workshop_next" onclick="photo_next()" src="/img/menu2/sec03/sec03_next.png" alt="">
+    </section>
+    <!-- workshop - 워크샵 현장 사진  -->
+
+    <section class="blank" id="blank2">
+        <div class="border"></div>
+        <img id="blank2_img" src="/img/circle.png" alt="">
+    </section>
+    <!-- blank2 - 내려오는 선 두번째 -->
+
+    <section class="pop hide" id="pop1">
+        <h1>워크숍</h1>
+        <h2>현장 기록</h2>
+        <img class="pop_main pop_main1" src="/img/menu7/pop/sec01_pop1.png" alt="">
+        <img class="pop_close" onclick="closePopup1()" src="/img/menu4/sec01/sec01_pop_btn.png" alt="">
+        <div class="img_box">
+            <img class="img_nav pop_prev" src="/img/menu7/pop/menu7_01_pop_prev.png" alt="">
+            <img class="pop_bottom_img pop_bottom1" src="/img/menu7/pop/sec01_pop1.png" alt="">
+            <img class="pop_bottom_img pop_bottom2" src="/img/menu7/pop/sec01_pop2.png" alt="">
+            <img class="pop_bottom_img pop_bottom3" src="/img/menu7/pop/sec01_pop3.png" alt="">
+            <img class="pop_bottom_img pop_bottom4" src="/img/menu7/pop/sec01_pop4.png" alt="">
+            <img class="pop_bottom_img pop_bottom5" src="/img/menu7/pop/sec01_pop5.png" alt="">
+            <img class="pop_bottom_img pop_bottom6" src="/img/menu7/pop/sec01_pop6.png" alt="">
+            <img class="img_nav pop_next" src="/img/menu7/pop/menu7_01_pop_next.png" alt="">
+        </div>
+    </section>
+    <!-- pop1 - 첫번째 팝업 (워크샵 현장) -->
+
+    <section class="field">
+        <h1>현장기록</h1>
+        <div class="field_card video_card">
+            <img src="/img/menu7/sec02/video_art/7_02pop/sec02_pop1.jpg" alt="">
+            <img src="/img/menu7/sec02/video_art/7_02pop/sec02_pop2.jpg" alt="">
+            <img src="/img/menu7/sec02/video_art/7_02pop/sec02_pop3.jpg" alt="">
+            <img src="/img/menu7/sec02/video_art/7_02pop/sec02_pop4.jpg" alt="">
+            <img src="/img/menu7/sec02/video_art/7_02pop/sec02_pop5.jpg" alt="">
+            <img src="/img/menu7/sec02/video_art/7_02pop/sec02_pop6.jpg" alt="">
+            <img src="/img/menu7/sec02/video_art/7_02pop/sec02_pop7.jpg" alt="">
+        </div>
+        <!-- 첫번째 현장기록 - 비디오아트 -->
+
+        <div class="field_card install_card">
+            <img src="/img/menu7/sec02/video_art/7_02pop/sec02_pop1.jpg" alt="">
+            <img src="/img/menu7/sec02/video_art/7_02pop/sec02_pop2.jpg" alt="">
+            <img src="/img/menu7/sec02/video_art/7_02pop/sec02_pop3.jpg" alt="">
+            <img src="/img/menu7/sec02/video_art/7_02pop/sec02_pop4.jpg" alt="">
+            <img src="/img/menu7/sec02/video_art/7_02pop/sec02_pop5.jpg" alt="">
+            <img src="/img/menu7/sec02/video_art/7_02pop/sec02_pop6.jpg" alt="">
+            <img src="/img/menu7/sec02/video_art/7_02pop/sec02_pop7.jpg" alt="">
+        </div>
+        <!-- 두번째 현장기록 - 설치미술 -->
+
+        <img id="icon1" src="/img/menu7/sec02/sec02_txt_icon01.png" alt="">
+        <img id="icon2" src="/img/menu7/sec02/sec02_txt_icon02.png" alt="">
+        <!-- 비디오아트 & 현장기록 돼지꼬리 아이콘 -->
+    </section>
+    <!-- field - 현장기로 -->
+
+    <section class="pop hide" id="pop2">
+        <h1>비디오아트</h1>
+        <h2>현장 기록</h2>
+        <img class="pop_main pop_main2" src="/img/menu7/sec02/video_art/7_02pop/sec02_pop1.jpg" alt="">
+        <img class="pop_close" onclick="closePopup2()" src="/img/menu4/sec01/sec01_pop_btn.png" alt="">
+        <div class="img_box">
+            <img class="img_nav pop_prev2" src="/img/menu7/pop/menu7_01_pop_prev.png" alt="">
+            <img class="pop_bottom_img pop2_bottom1" src="/img/menu7/sec02/video_art/7_02spop/sec02_spop1.jpg" alt="">
+            <img class="pop_bottom_img pop2_bottom2" src="/img/menu7/sec02/video_art/7_02spop/sec02_spop2.jpg" alt="">
+            <img class="pop_bottom_img pop2_bottom3" src="/img/menu7/sec02/video_art/7_02spop/sec02_spop3.jpg" alt="">
+            <img class="pop_bottom_img pop2_bottom4" src="/img/menu7/sec02/video_art/7_02spop/sec02_spop4.jpg" alt="">
+            <img class="pop_bottom_img pop2_bottom5" src="/img/menu7/sec02/video_art/7_02spop/sec02_spop5.jpg" alt="">
+            <img class="pop_bottom_img pop2_bottom6" src="/img/menu7/sec02/video_art/7_02spop/sec02_spop6.jpg" alt="">
+            <img class="img_nav pop_next2" src="/img/menu7/pop/menu7_01_pop_next.png" alt="">
+        </div>
+    </section>
+    <!-- 두번째 팝업 - 현장기록(비디오아트) -->
+
+    <section class="blank" id="blank3">
+        <div class="border"></div>
+        <img id="blank3_img" src="/img/circle.png" alt="">
+    </section>
+    <!-- 내려오는 선 세 번째  -->
+
+    <section class="interview">
+        <h1>인터뷰</h1>
+        <ul class="interviewslider">
+            <li class="interview_list">
+                <div class="interview_box">
+                    <div class="interview_title"></div>
+                    <div class="interview_desc">
+                        <h1>외부 인터넷 및 뉴스기사 제목</h1>
+                        <p>장년층 비디오 아트에 대한 간단한 소개글 텍스트
+                            텍스트 텍스트 텍스트 텍스트....</p>
+                        <span>2021/03/30</span>
+                    </div>
+                </div>
+                <div class="interview_box">
+                    <div class="interview_title"></div>
+                    <div class="interview_desc">
+                        <h1>외부 인터넷 및 뉴스기사 제목</h1>
+                        <p>장년층 비디오 아트에 대한 간단한 소개글 텍스트
+                            텍스트 텍스트 텍스트 텍스트....</p>
+                        <span>2021/03/30</span>
+                    </div>
+                </div>
+                <div class="interview_box">
+                    <div class="interview_title"></div>
+                    <div class="interview_desc">
+                        <h1>외부 인터넷 및 뉴스기사 제목</h1>
+                        <p>장년층 비디오 아트에 대한 간단한 소개글 텍스트
+                            텍스트 텍스트 텍스트 텍스트....</p>
+                        <span>2021/03/30</span>
+                    </div>
+                </div>
+            </li>
+            <li class="interview_list">
+                <div class="interview_box">
+                    <div class="interview_title"></div>
+                    <div class="interview_desc">
+                        <h1>외부 인터넷 및 뉴스기사 제목</h1>
+                        <p>장년층 비디오 아트에 대한 간단한 소개글 텍스트
+                            텍스트 텍스트 텍스트 텍스트....</p>
+                        <span>2021/03/30</span>
+                    </div>
+                </div>
+                <div class="interview_box">
+                    <div class="interview_title"></div>
+                    <div class="interview_desc">
+                        <h1>외부 인터넷 및 뉴스기사 제목</h1>
+                        <p>장년층 비디오 아트에 대한 간단한 소개글 텍스트
+                            텍스트 텍스트 텍스트 텍스트....</p>
+                        <span>2021/03/30</span>
+                    </div>
+                </div>
+                <div class="interview_box">
+                    <div class="interview_title"></div>
+                    <div class="interview_desc">
+                        <h1>외부 인터넷 및 뉴스기사 제목</h1>
+                        <p>장년층 비디오 아트에 대한 간단한 소개글 텍스트
+                            텍스트 텍스트 텍스트 텍스트....</p>
+                        <span>2021/03/30</span>
+                    </div>
+                </div>
+            </li>
+            <li class="interview_list">
+                <div class="interview_box">
+                    <div class="interview_title"></div>
+                    <div class="interview_desc">
+                        <h1>외부 인터넷 및 뉴스기사 제목</h1>
+                        <p>장년층 비디오 아트에 대한 간단한 소개글 텍스트
+                            텍스트 텍스트 텍스트 텍스트....</p>
+                        <span>2021/03/30</span>
+                    </div>
+                </div>
+                <div class="interview_box">
+                    <div class="interview_title"></div>
+                    <div class="interview_desc">
+                        <h1>외부 인터넷 및 뉴스기사 제목</h1>
+                        <p>장년층 비디오 아트에 대한 간단한 소개글 텍스트
+                            텍스트 텍스트 텍스트 텍스트....</p>
+                        <span>2021/03/30</span>
+                    </div>
+                </div>
+                <div class="interview_box">
+                    <div class="interview_title"></div>
+                    <div class="interview_desc">
+                        <h1>외부 인터넷 및 뉴스기사 제목</h1>
+                        <p>장년층 비디오 아트에 대한 간단한 소개글 텍스트
+                            텍스트 텍스트 텍스트 텍스트....</p>
+                        <span>2021/03/30</span>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </section>
+    <!-- interview -->
+
+</main>
+<!-- main -->
+
+<footer>
+    <section class="footer_top">
+        <div class="footer_top_left">
+            <img src="/img/footer_logo01.png" alt="">
+            <h1>BUSINESS EMAIL</h1>
+            <h2>achecollabo@naver.com</h2>
+        </div>
+        <div class="footer_top_right">
+            <div class="footer_top_right_box">
+                <h1>DIRECTOR</h1>
+                <h2>Hwang Hye-jun<br>Shin Hyunji</h2>
+            </div>
+            <div class="footer_top_right_box">
+                <h1>TEL</h1>
+                <h2>010-3349-3580<br>010-3677-3436</h2>
+            </div>
+            <div class="footer_top_right_box">
+                <h1>E-MAIL</h1>
+                <h2>heyjunhwang@gmail.com<br>chezipmang@gmail.com</h2>
+            </div>
+        </div>
+    </section>
+    <section class="footer_bottom">
+        <div class="footer_bottom_left">
+            <h3>100, Cheonggyecheon-ro, Jung-gu, Seoul, Republic of Korea</h3>
+            <h4>COPYRIGHT © ACHECOLLABO.INC.ALL RIGHTS RESERVED</h4>
+        </div>
+        <div class="footer_bottom_right">
+            <img src="/img/footer_logo02.png" alt="">
+        </div>
+    </section>
+</footer>
+<!-- footer -->
+
+<script src="../common/js/top_nav.js"></script>
+<script src="history.js"></script>
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/stylesheets/reset.css">
+    <link rel="stylesheet" href="/stylesheets/layout.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/a5ace50b2e.js" crossorigin="anonymous"></script>
+    <script>
+        $(window).ready(function() {
+            $('.sub_nav').hide();
+        })
+    </script>
+    <title>낭만역사 사가정</title>
+</head>
+<body>
+<header>
+    <div class="logo">
+        <img src="/img/gnb_logo02.png" alt="">
+        <img src="/img/gnb_logo01.png" onclick="location.href='./index.html'" alt="">
+        <i class="fas fa-bars nav_toggle_btn"></i>
+    </div>
+    <ul class="nav">
+        <div>
+            <li class="nav_li"><a href="./cate01/video">작품</a></li>
+        </div>
+        <div>
+            <li class="nav_li"><a href="./cate02/intro">소개</a></li>
+        </div>
+        <div>
+            <li class="nav_li"><a href="./cate03/workshop">아카이브</a></li>
+        </div>
+    </ul>
+    <ul class="sub_nav">
+        <li>
+            <ul>
+                <li class="mobile nav_category">작품</li>
+                <li class="sub_nav_li sub_nav1"><a href="./cate01/video">비디오 아트</a></li>
+                <li class="sub_nav_li sub_nav1"><a href="./cate01/install">설치 미술</a></li>
+                <li class="sub_nav_li sub_nav1"><a href="./cate01/3d">3D</a></li>
+            </ul>
+        </li>
+        <li>
+            <ul>
+                <li class="mobile nav_category">소개</li>
+                <li class="sub_nav_li sub_nav2"><a href="./cate02/intro">프로젝트 개요</a></li>
+                <li class="sub_nav_li sub_nav2"><a href="./cate02/cooperation">프로젝트 협력</a></li>
+            </ul>
+        </li>
+        <li>
+            <ul>
+                <li class="mobile nav_category">아카이브</li>
+                <li class="sub_nav_li sub_nav3"><a href="./cate03/workshop">낭만을 즐기는 방법 워크숍</a></li>
+                <li class="sub_nav_li sub_nav3"><a href="./cate03/history">활동기록</a></li>
+            </ul>
+        </li>
+    </ul>
+</header>
+<main></main>
+<footer>
+    <section class="footer_top">
+        <div class="footer_top_left">
+            <img src="/img/footer_logo01.png" alt="">
+            <h1>BUSINESS EMAIL</h1>
+            <h2>achecollabo@naver.com</h2>
+        </div>
+        <div class="footer_top_right">
+            <div class="footer_top_right_box">
+                <h1>DIRECTOR</h1>
+                <h2>Hwang Hye-jun<br>Shin Hyunji</h2>
+            </div>
+            <div class="footer_top_right_box">
+                <h1>TEL</h1>
+                <h2>010-3349-3580<br>010-3677-3436</h2>
+            </div>
+            <div class="footer_top_right_box">
+                <h1>E-MAIL</h1>
+                <h2>heyjunhwang@gmail.com<br>chezipmang@gmail.com</h2>
+            </div>
+        </div>
+    </section>
+    <section class="footer_bottom">
+        <div class="footer_bottom_left">
+            <h3>100, Cheonggyecheon-ro, Jung-gu, Seoul, Republic of Korea</h3>
+            <h4>COPYRIGHT © ACHECOLLABO.INC.ALL RIGHTS RESERVED</h4>
+        </div>
+        <div class="footer_bottom_right">
+            <img src="/img/footer_logo02.png" alt="">
+        </div>
+    </section>
+</footer>
+<script src="/js/top_nav.js"></script>
+</body>
+</html>
