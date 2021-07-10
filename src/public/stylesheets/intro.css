@@ -3,8 +3,7 @@
 @keyframes logo-left {
     0% {
         transform: translate(0, 0);
-        background: url('img/menu4/sec01/sec01_top_circle01.png');
-        background-position: center;
+        background: url('../img/menu4/sec01/sec01_top_circle01.png') center;
         background-size: cover;
         opacity: 1;
     }
@@ -13,8 +12,7 @@
     }
     100% {
         transform: translate(calc(40vw - 200px), 0);
-        background: url('img/menu4/sec01/sec01_top_circle01.png');
-        background-position: center;
+        background: url('../img/menu4/sec01/sec01_top_circle01.png') center;
         background-size: cover;
         opacity: 0;
     }
@@ -22,8 +20,7 @@
 @keyframes logo-right {
     0% {
         transform: translate(0, 0);
-        background: url('img/menu4/sec01/sec01_top_circle02.png');
-        background-position: center;
+        background: url('../img/menu4/sec01/sec01_top_circle02.png') center;
         background-size: cover;
         opacity: 1;
     }
@@ -32,8 +29,7 @@
     }
     100% {
         transform: translate(calc(200px - 40vw), 0);
-        background: url('img/menu4/sec01/sec01_top_circle02.png');
-        background-position: center;
+        background: url('../img/menu4/sec01/sec01_top_circle02.png') center;
         background-size: cover;
         opacity: 0;
     }
@@ -511,8 +507,7 @@ section[class^="banner"] > button:hover {
     @keyframes logo-left {
         0% {
             transform: translate(0, 0);
-            background: url('img/menu4/sec01/sec01_top_circle01.png');
-            background-position: center;
+            background: url('../img/menu4/sec01/sec01_top_circle01.png') center;
             background-size: cover;
             opacity: 1;
         }
@@ -521,8 +516,7 @@ section[class^="banner"] > button:hover {
         }
         100% {
             transform: translate(calc(40vw - 90px), 0);
-            background: url('img/menu4/sec01/sec01_top_circle01.png');
-            background-position: center;
+            background: url('../img/menu4/sec01/sec01_top_circle01.png') center;
             background-size: cover;
             opacity: 0;
         }
@@ -530,8 +524,7 @@ section[class^="banner"] > button:hover {
     @keyframes logo-right {
         0% {
             transform: translate(0, 0);
-            background: url('img/menu4/sec01/sec01_top_circle02.png');
-            background-position: center;
+            background: url('../img/menu4/sec01/sec01_top_circle02.png') center;
             background-size: cover;
             opacity: 1;
         }
@@ -540,8 +533,7 @@ section[class^="banner"] > button:hover {
         }
         100% {
             transform: translate(calc(90px - 40vw), 0);
-            background: url('img/menu4/sec01/sec01_top_circle02.png');
-            background-position: center;
+            background: url('../img/menu4/sec01/sec01_top_circle02.png') center;
             background-size: cover;
             opacity: 0;
         }

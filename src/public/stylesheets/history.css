@@ -355,17 +355,13 @@
 }
 .bx-wrapper .bx-prev {
     left: 0;
-    background: url('img/menu7/sec01/sec01_prev.png');
-    background-position: center;
     background-size: cover;
-    background-repeat: no-repeat;
+    background: url('../img/menu7/sec01/sec01_prev.png') no-repeat center;
 }
 .bx-wrapper .bx-next {
     right: 0;
-    background: url('img/menu7/sec01/sec01_next.png');
-    background-position: center;
     background-size: cover;
-    background-repeat: no-repeat;
+    background: url('../img/menu7/sec01/sec01_next.png') no-repeat center;
 }
 .bx-wrapper .bx-next:hover, .bx-wrapper .bx-next:focus {
     background-position: center;

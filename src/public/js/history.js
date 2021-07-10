@@ -48,7 +48,7 @@ function photo_next() {
     if(photo_num < 11) {
         photo_num += 1;
         $('.photo_box img').fadeOut();
-        $('.photo_box img').attr('src', `./img/menu7/sec01/sec01_img${photo_num}.png`);
+        $('.photo_box img').attr('src', `/img/menu7/sec01/sec01_img${photo_num}.png`);
         $('.photo_box img').fadeIn();
         $('.photo_box h1').text(`${photo_num} / 11`);
     }   else {
@@ -59,7 +59,7 @@ function photo_prev() {
     if(photo_num > 1) {
         photo_num -= 1;
         $('.photo_box img').fadeOut();
-        $('.photo_box img').attr('src', `./img/menu7/sec01/sec01_img${photo_num}.png`);
+        $('.photo_box img').attr('src', `/img/menu7/sec01/sec01_img${photo_num}.png`);
         $('.photo_box img').fadeIn();
         $('.photo_box h1').text(`${photo_num} / 11`);
     }   else {
@@ -87,19 +87,19 @@ function pop_img_next() {
     if(pop_num < 7) {
         pop_num += 1;
         pop_page = pop_num * 6;
-        $('.pop_bottom1').css('opacity','0').attr('src', `./img/menu7/pop/sec01_pop${pop_page - 5}.png`).animate({opacity:1},1000);
-        $('.pop_bottom2').css('opacity','0').attr('src', `./img/menu7/pop/sec01_pop${pop_page - 4}.png`).animate({opacity:1},1000);
-        $('.pop_bottom3').css('opacity','0').attr('src', `./img/menu7/pop/sec01_pop${pop_page - 3}.png`).animate({opacity:1},1000);
-        $('.pop_bottom4').css('opacity','0').attr('src', `./img/menu7/pop/sec01_pop${pop_page - 2}.png`).animate({opacity:1},1000);
-        $('.pop_bottom5').css('opacity','0').attr('src', `./img/menu7/pop/sec01_pop${pop_page - 1}.png`).animate({opacity:1},1000);
-        $('.pop_bottom6').css('opacity','0').attr('src', `./img/menu7/pop/sec01_pop${pop_page - 0}.png`).animate({opacity:1},1000);
+        $('.pop_bottom1').css('opacity','0').attr('src', `/img/menu7/pop/sec01_pop${pop_page - 5}.png`).animate({opacity:1},1000);
+        $('.pop_bottom2').css('opacity','0').attr('src', `/img/menu7/pop/sec01_pop${pop_page - 4}.png`).animate({opacity:1},1000);
+        $('.pop_bottom3').css('opacity','0').attr('src', `/img/menu7/pop/sec01_pop${pop_page - 3}.png`).animate({opacity:1},1000);
+        $('.pop_bottom4').css('opacity','0').attr('src', `/img/menu7/pop/sec01_pop${pop_page - 2}.png`).animate({opacity:1},1000);
+        $('.pop_bottom5').css('opacity','0').attr('src', `/img/menu7/pop/sec01_pop${pop_page - 1}.png`).animate({opacity:1},1000);
+        $('.pop_bottom6').css('opacity','0').attr('src', `/img/menu7/pop/sec01_pop${pop_page - 0}.png`).animate({opacity:1},1000);
         let main_url = $('.pop_bottom1').attr('src');
         $('.pop_main1').css('opacity','0').attr('src', `${main_url}`).animate({opacity:1},1000);
     }   else if(pop_num == 7) {
         pop_num += 1;
         pop_page = pop_num * 6;
-        $('.pop_bottom1').css('opacity','0').stop().attr('src', `./img/menu7/pop/sec01_pop${pop_page - 5}.png`).animate({opacity:1},1000);
-        $('.pop_bottom2').css('opacity','0').stop().attr('src', `./img/menu7/pop/sec01_pop${pop_page - 4}.png`).animate({opacity:1},1000);
+        $('.pop_bottom1').css('opacity','0').stop().attr('src', `/img/menu7/pop/sec01_pop${pop_page - 5}.png`).animate({opacity:1},1000);
+        $('.pop_bottom2').css('opacity','0').stop().attr('src', `/img/menu7/pop/sec01_pop${pop_page - 4}.png`).animate({opacity:1},1000);
         $('.pop_bottom3').css('opacity','0');
         $('.pop_bottom4').css('opacity','0');
         $('.pop_bottom5').css('opacity','0');
@@ -114,12 +114,12 @@ function pop_img_prev() {
     if(pop_num > 1) {
         pop_num -= 1;
         pop_page = pop_num * 6;
-        $('.pop_bottom1').css('opacity','0').stop().attr('src', `./img/menu7/pop/sec01_pop${pop_page - 5}.png`).animate({opacity:1},1000);
-        $('.pop_bottom2').css('opacity','0').stop().attr('src', `./img/menu7/pop/sec01_pop${pop_page - 4}.png`).animate({opacity:1},1000);
-        $('.pop_bottom3').css('opacity','0').stop().attr('src', `./img/menu7/pop/sec01_pop${pop_page - 3}.png`).animate({opacity:1},1000);
-        $('.pop_bottom4').css('opacity','0').stop().attr('src', `./img/menu7/pop/sec01_pop${pop_page - 2}.png`).animate({opacity:1},1000);
-        $('.pop_bottom5').css('opacity','0').stop().attr('src', `./img/menu7/pop/sec01_pop${pop_page - 1}.png`).animate({opacity:1},1000);
-        $('.pop_bottom6').css('opacity','0').stop().attr('src', `./img/menu7/pop/sec01_pop${pop_page - 0}.png`).animate({opacity:1},1000);
+        $('.pop_bottom1').css('opacity','0').stop().attr('src', `/img/menu7/pop/sec01_pop${pop_page - 5}.png`).animate({opacity:1},1000);
+        $('.pop_bottom2').css('opacity','0').stop().attr('src', `/img/menu7/pop/sec01_pop${pop_page - 4}.png`).animate({opacity:1},1000);
+        $('.pop_bottom3').css('opacity','0').stop().attr('src', `/img/menu7/pop/sec01_pop${pop_page - 3}.png`).animate({opacity:1},1000);
+        $('.pop_bottom4').css('opacity','0').stop().attr('src', `/img/menu7/pop/sec01_pop${pop_page - 2}.png`).animate({opacity:1},1000);
+        $('.pop_bottom5').css('opacity','0').stop().attr('src', `/img/menu7/pop/sec01_pop${pop_page - 1}.png`).animate({opacity:1},1000);
+        $('.pop_bottom6').css('opacity','0').stop().attr('src', `/img/menu7/pop/sec01_pop${pop_page - 0}.png`).animate({opacity:1},1000);
         let main_url = $('.pop_bottom1').attr('src');
         $('.pop_main1').css('opacity','0').attr('src', `${main_url}`).animate({opacity:1},1000);
     } else {
@@ -150,21 +150,21 @@ function pop_img_next2() {
     if(pop_num2 < 7) {
         pop_num2 += 1;
         pop_page2 = pop_num2 * 6;
-        $('.pop2_bottom1').css('opacity','0').attr('src', `./img/menu7/sec02/video_art/7_02spop/sec02_spop${pop_page2 - 5}.jpg`).animate({opacity:1},1000);
-        $('.pop2_bottom2').css('opacity','0').attr('src', `./img/menu7/sec02/video_art/7_02spop/sec02_spop${pop_page2 - 4}.jpg`).animate({opacity:1},1000);
-        $('.pop2_bottom3').css('opacity','0').attr('src', `./img/menu7/sec02/video_art/7_02spop/sec02_spop${pop_page2 - 3}.jpg`).animate({opacity:1},1000);
-        $('.pop2_bottom4').css('opacity','0').attr('src', `./img/menu7/sec02/video_art/7_02spop/sec02_spop${pop_page2 - 2}.jpg`).animate({opacity:1},1000);
-        $('.pop2_bottom5').css('opacity','0').attr('src', `./img/menu7/sec02/video_art/7_02spop/sec02_spop${pop_page2 - 1}.jpg`).animate({opacity:1},1000);
-        $('.pop2_bottom6').css('opacity','0').attr('src', `./img/menu7/sec02/video_art/7_02spop/sec02_spop${pop_page2 - 0}.jpg`).animate({opacity:1},1000);
+        $('.pop2_bottom1').css('opacity','0').attr('src', `/img/menu7/sec02/video_art/7_02spop/sec02_spop${pop_page2 - 5}.jpg`).animate({opacity:1},1000);
+        $('.pop2_bottom2').css('opacity','0').attr('src', `/img/menu7/sec02/video_art/7_02spop/sec02_spop${pop_page2 - 4}.jpg`).animate({opacity:1},1000);
+        $('.pop2_bottom3').css('opacity','0').attr('src', `/img/menu7/sec02/video_art/7_02spop/sec02_spop${pop_page2 - 3}.jpg`).animate({opacity:1},1000);
+        $('.pop2_bottom4').css('opacity','0').attr('src', `/img/menu7/sec02/video_art/7_02spop/sec02_spop${pop_page2 - 2}.jpg`).animate({opacity:1},1000);
+        $('.pop2_bottom5').css('opacity','0').attr('src', `/img/menu7/sec02/video_art/7_02spop/sec02_spop${pop_page2 - 1}.jpg`).animate({opacity:1},1000);
+        $('.pop2_bottom6').css('opacity','0').attr('src', `/img/menu7/sec02/video_art/7_02spop/sec02_spop${pop_page2 - 0}.jpg`).animate({opacity:1},1000);
         let main_url = $('.pop2_bottom1').attr('src');
         $('.pop_main2').css('opacity','0').attr('src', `${main_url}`).animate({opacity:1},1000);
     }   else if(pop_num2 == 7) {
         pop_num2 += 1;
         pop_page2 = pop_num2 * 6;
-        $('.pop2_bottom1').css('opacity','0').stop().attr('src', `./img/menu7/sec02/video_art/7_02spop/sec02_spop${pop_page2 - 5}.jpg`).animate({opacity:1},1000);
-        $('.pop2_bottom2').css('opacity','0').stop().attr('src', `./img/menu7/sec02/video_art/7_02spop/sec02_spop${pop_page2 - 4}.jpg`).animate({opacity:1},1000);
-        $('.pop2_bottom3').css('opacity','0').stop().attr('src', `./img/menu7/sec02/video_art/7_02spop/sec02_spop${pop_page2 - 3}.jpg`).animate({opacity:1},1000);
-        $('.pop2_bottom4').css('opacity','0').stop().attr('src', `./img/menu7/sec02/video_art/7_02spop/sec02_spop${pop_page2 - 2}.jpg`).animate({opacity:1},1000);
+        $('.pop2_bottom1').css('opacity','0').stop().attr('src', `/img/menu7/sec02/video_art/7_02spop/sec02_spop${pop_page2 - 5}.jpg`).animate({opacity:1},1000);
+        $('.pop2_bottom2').css('opacity','0').stop().attr('src', `/img/menu7/sec02/video_art/7_02spop/sec02_spop${pop_page2 - 4}.jpg`).animate({opacity:1},1000);
+        $('.pop2_bottom3').css('opacity','0').stop().attr('src', `/img/menu7/sec02/video_art/7_02spop/sec02_spop${pop_page2 - 3}.jpg`).animate({opacity:1},1000);
+        $('.pop2_bottom4').css('opacity','0').stop().attr('src', `/img/menu7/sec02/video_art/7_02spop/sec02_spop${pop_page2 - 2}.jpg`).animate({opacity:1},1000);
         $('.pop2_bottom5').css('opacity','0');
         $('.pop2_bottom6').css('opacity','0');
         let main_url = $('.pop2_bottom1').attr('src');
@@ -177,12 +177,12 @@ function pop_img_prev2() {
     if(pop_num2 > 1) {
         pop_num2 -= 1;
         pop_page2 = pop_num2 * 6;
-        $('.pop2_bottom1').css('opacity','0').stop().attr('src', `./img/menu7/sec02/video_art/7_02spop/sec02_spop${pop_page2 - 5}.jpg`).animate({opacity:1},1000);
-        $('.pop2_bottom2').css('opacity','0').stop().attr('src', `./img/menu7/sec02/video_art/7_02spop/sec02_spop${pop_page2 - 4}.jpg`).animate({opacity:1},1000);
-        $('.pop2_bottom3').css('opacity','0').stop().attr('src', `./img/menu7/sec02/video_art/7_02spop/sec02_spop${pop_page2 - 3}.jpg`).animate({opacity:1},1000);
-        $('.pop2_bottom4').css('opacity','0').stop().attr('src', `./img/menu7/sec02/video_art/7_02spop/sec02_spop${pop_page2 - 2}.jpg`).animate({opacity:1},1000);
-        $('.pop2_bottom5').css('opacity','0').stop().attr('src', `./img/menu7/sec02/video_art/7_02spop/sec02_spop${pop_page2 - 1}.jpg`).animate({opacity:1},1000);
-        $('.pop2_bottom6').css('opacity','0').stop().attr('src', `./img/menu7/sec02/video_art/7_02spop/sec02_spop${pop_page2 - 0}.jpg`).animate({opacity:1},1000);
+        $('.pop2_bottom1').css('opacity','0').stop().attr('src', `/img/menu7/sec02/video_art/7_02spop/sec02_spop${pop_page2 - 5}.jpg`).animate({opacity:1},1000);
+        $('.pop2_bottom2').css('opacity','0').stop().attr('src', `/img/menu7/sec02/video_art/7_02spop/sec02_spop${pop_page2 - 4}.jpg`).animate({opacity:1},1000);
+        $('.pop2_bottom3').css('opacity','0').stop().attr('src', `/img/menu7/sec02/video_art/7_02spop/sec02_spop${pop_page2 - 3}.jpg`).animate({opacity:1},1000);
+        $('.pop2_bottom4').css('opacity','0').stop().attr('src', `/img/menu7/sec02/video_art/7_02spop/sec02_spop${pop_page2 - 2}.jpg`).animate({opacity:1},1000);
+        $('.pop2_bottom5').css('opacity','0').stop().attr('src', `/img/menu7/sec02/video_art/7_02spop/sec02_spop${pop_page2 - 1}.jpg`).animate({opacity:1},1000);
+        $('.pop2_bottom6').css('opacity','0').stop().attr('src', `/img/menu7/sec02/video_art/7_02spop/sec02_spop${pop_page2 - 0}.jpg`).animate({opacity:1},1000);
         let main_url = $('.pop2_bottom1').attr('src');
         $('.pop_main2').css('opacity','0').attr('src', `${main_url}`).animate({opacity:1},1000);
     } else {
