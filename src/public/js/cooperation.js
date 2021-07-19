@@ -9,7 +9,7 @@ $(document).ready(function() {
              $(".center > img").addClass('up');
              $(".center > h1").addClass('up');
              $("#circle1").addClass('circle_shown');
-         }   else if(current_scroll >= (height2 - 800) & current_scroll < height2) {
+         }   else if(current_scroll >= (height2 - 1000) & current_scroll < height2) {
             $(".center .img_box").addClass('up');
             $("#border2").addClass('vertical');
              $(".participant_title span").addClass('stretched');

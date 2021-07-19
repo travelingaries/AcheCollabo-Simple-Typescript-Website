@@ -7,7 +7,7 @@ $(document).ready(function() {
         let height2 = $('.banner2').offset().top;
         let height3 = $('.banner3').offset().top;
         if(current_scroll - prev_scroll > 0) {
-            if(current_scroll >= (height1 - 500) & current_scroll < height1) {
+            if(current_scroll >= (height1 - 800) & current_scroll < height1) {
                 $('.banner1').addClass('banner_shown');
                 $('.banner1 > h1').addClass('shown');
                 $('.banner1 .icon_box h2').addClass('up');
@@ -16,7 +16,7 @@ $(document).ready(function() {
                 $('#banner_border1').addClass('stretched');
                 $('#banner_circle1').addClass('banner_circle_shown');
                 prev_scroll = current_scroll;
-            }    else if(current_scroll >= (height2 - 500) & current_scroll < height2) {
+            }    else if(current_scroll >= (height2 - 800) & current_scroll < height2) {
                 $('.banner2').addClass('banner_shown');
                 $('.banner2 > h1').addClass('shown');
                 $('.banner2 .icon_box h2').addClass('up');
@@ -25,7 +25,7 @@ $(document).ready(function() {
                 $('#banner_border2').addClass('stretched');
                 $('#banner_circle2').addClass('banner_circle_shown');
                 prev_scroll = current_scroll;
-            }   else if(current_scroll >= (height3 - 500) & current_scroll < height3) {
+            }   else if(current_scroll >= (height3 - 800) & current_scroll < height3) {
                 $('.banner3').addClass('banner_shown');
                 $('.banner3 > h1').addClass('shown');
                 $('.banner3 .icon_box h2').addClass('up');

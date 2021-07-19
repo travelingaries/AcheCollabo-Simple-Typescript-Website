@@ -1,8 +1,8 @@
 @font-face {
     font-family: "Nanum";
     src: url("../font/Nanumsquare_ac_TTF/NanumSquare_acR.ttf");
-} 
- @font-face {
+}
+@font-face {
     font-family: "Nanum";
     src: url("../font/San-Francisco/SFNSDisplay-Regular.otf");
     unicode-range: U+0020-007E;
@@ -11,8 +11,8 @@
 @font-face {
     font-family: "Nanum_bold";
     src: url("../font/Nanumsquare_ac_TTF/NanumSquare_acB.ttf");
-} 
- @font-face {
+}
+@font-face {
     font-family: "Nanum_bold";
     src: url("../font/San-Francisco/SFNSDisplay-Bold.otf");
     unicode-range: U+0020-007E;
@@ -21,8 +21,8 @@
 @font-face {
     font-family: "Nanum_black";
     src: url("../font/Nanumsquare_ac_TTF/NanumSquare_acEB.ttf");
-} 
- @font-face {
+}
+@font-face {
     font-family: "Nanum_black";
     src: url("../font/San-Francisco/SFNSDisplay-Black.otf");
     unicode-range: U+0020-007E;
@@ -31,8 +31,8 @@
 @font-face {
     font-family: "Nanum_light";
     src: url("../font/Nanumsquare_ac_TTF/NanumSquare_acL.ttf");
-} 
- @font-face {
+}
+@font-face {
     font-family: "Nanum_light";
     src: url("../font/San-Francisco/SFNSDisplay-Light.otf");
     unicode-range: U+0020-007E;
@@ -174,7 +174,7 @@ footer {
     flex-direction: column;
     justify-content: space-between;
     border-left: 1px solid black;
-    padding: 10px 30px 10px 30px; 
+    padding: 10px 30px 10px 30px;
 }
 .footer_top_right_box h1 {
     font-size: 20px;
@@ -220,7 +220,7 @@ footer {
     }
     .logo img:nth-child(2) {
         flex: 5;
-        padding: 0 30px 0 10px;
+        padding: 0 50px 0 70px;
     }
     .nav_toggle_btn {
         opacity: 1;
@@ -252,7 +252,8 @@ footer {
         justify-content: center;
         align-items: center;
         font-weight: bold;
-        background-color: rgba(128, 128, 128, 0.5);
+        border-top: 1px solid black;
+        border-bottom: 1px solid black;
         margin: 0;
         padding: 0;
     }
