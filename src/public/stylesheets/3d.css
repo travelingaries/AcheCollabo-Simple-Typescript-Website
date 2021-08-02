@@ -1,0 +1,51 @@
+
+main {
+    width: 100%;
+    height: calc(100vh - 135px);
+    display: flex;
+    flex-direction: row;
+}
+main .exit {
+    width: 50%;
+    height: 100%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main .exit h1 {
+    font-size: 40px;
+    font-weight: 800;
+    color: white;
+    opacity: 0.6;
+}
+main .exit1 {
+    background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.7)), url('../img/3d/exit1.jpg');
+    background-position: center;
+    background-size: cover;
+}
+main .exit1:hover {
+    background-image: url('../img/3d/exit1.jpg');
+    background-position: center;
+    background-size: cover;
+}
+main .exit1:hover h1 {
+    opacity: 1;
+}
+main .exit2 {
+    background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.7)), url('../img/3d/exit2.jpg');
+    background-position: center;
+    background-size: cover;
+}
+main .exit2:hover {
+    background-image: url('../img/3d/exit2.jpg');
+    background-position: center;
+    background-size: cover;
+}
+main .exit2:hover h1 {
+    opacity: 1;
+}
+#3d {
+    width: 100vw;
+    height: 100vw;
+}

@@ -22,16 +22,16 @@
         transform: translate(0, 200px);
         opacity: 0;
     } 100% {
-        transform: translate(0, 0);
-        opacity: 1;
-    }
+          transform: translate(0, 0);
+          opacity: 1;
+      }
 }
 @keyframes circle_show {
     0% {
         opacity: 0;
     } 100% {
-        opacity: 1;
-    }
+          opacity: 1;
+      }
 }
 .up {
     animation: up 1s forwards;
@@ -174,7 +174,7 @@
         }
     }
     .top {
-        padding: 60px 0;
+        padding: 50px 0;
     }
     .top h1 {
         font-size: 35px;
@@ -227,8 +227,9 @@
         width: 90%;
     }
     .participant_box h1 {
-        font-size: 11px;
+        font-size: 12px;
         text-align: center;
-        width: 290px;
+        width: 350px;
+        line-height: 2;
     }
 }

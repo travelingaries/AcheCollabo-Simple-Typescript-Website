@@ -10,7 +10,7 @@
 @keyframes border_long {
     0% {
         height: 0;
-    } 
+    }
     100% {
         height: 320px;
     }
@@ -18,7 +18,7 @@
 @keyframes border_short {
     0% {
         height: 0;
-    } 
+    }
     100% {
         height: 250px;
     }
@@ -26,9 +26,9 @@
 @keyframes border_last {
     0% {
         height: 0;
-    } 
+    }
     100% {
-        height: 800px;
+        height: 730px;
     }
 }
 .shown {
@@ -160,6 +160,17 @@ main {
     opacity: 0.8;
 }
 
+.interview {
+    width: 100%;
+    height: 80vh;
+    z-index: 10;
+}
+.interview #vid {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
 /* 여기부터 pop */
 .pop {
     display: flex;
@@ -212,13 +223,16 @@ main {
     left: 10vw;
 }
 .pop .pop_next {
-   right: 10vw;
+    right: 10vw;
+}
+.top.mobile {
+    display: none;
 }
 @media screen and (max-width: 768px) {
     @keyframes border_long {
         0% {
             height: 0;
-        } 
+        }
         100% {
             height: 120px;
         }
@@ -226,7 +240,7 @@ main {
     @keyframes border_short {
         0% {
             height: 0;
-        } 
+        }
         100% {
             height: 80px;
         }
@@ -234,17 +248,17 @@ main {
     @keyframes border_last {
         0% {
             height: 0;
-        } 
+        }
         100% {
-            height: 500px;
+            height: 550px;
         }
     }
     .border_s_down {
         top: 160px;
     }
-    
+
     .top {
-        padding: 60px 0;
+        padding: 50px 0;
     }
     .top h1 {
         font-size: 35px;
@@ -261,8 +275,8 @@ main {
     }
 
     .blank_box > img {
-         width: 10px;
-         margin-left: 5px;
+        width: 10px;
+        margin-left: 5px;
     }
 
     .week {
@@ -277,6 +291,9 @@ main {
     }
     .card3 {
         left: 50vw;
+    }
+    #last_border {
+        top: 140px;
     }
     .week > .card_btn_box {
         left: 60vw;
@@ -293,8 +310,8 @@ main {
         opacity: 0;
     }
     .card_btn_box > p {
-        font-size: 18px;
-        border-bottom: 1.5px solid black;
+        font-size: 15px;
+        border-bottom: 1.5px solid #5a5a5a;
         padding-bottom: 5px;
     }
     .pop > h1 {
@@ -319,5 +336,16 @@ main {
     }
     .pop .pop_next {
         right: 5vw;
+    }
+    .top.mobile {
+        display: flex;
+    }
+    .top.pc {
+        display: none;
+    }
+}
+@media screen and (max-width: 768px) and (orientation: landscape) {
+    .pop > h1 {
+        margin: 20px 0 15px 0;
     }
 }

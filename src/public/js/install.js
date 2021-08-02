@@ -44,5 +44,108 @@ $('#article_btn').on('click', function() {
     $('.fog').hide();
     $('#article_hidden').show();
     $(this).hide();
-})
+});
 // article 버튼 toggle 효과
+
+function click_img() {
+    let url = $(this).attr('src');
+    $(".install_img1").attr('src', url);
+}
+$(".s_img_box1 .s_img").on('click', click_img);
+// 팝업 창 밑 사진들 클릭 시 메인 이미지 바뀌는 효과
+
+function click_img2() {
+    let url = $(this).attr('src');
+    $(".install_img2").attr('src', url);
+}
+$(".s_img_box2 .s_img").on('click', click_img2);
+
+let slide_num = 1;
+let slide_page = 0;
+function slide_img_next() {
+    if(slide_num < 2) {
+        slide_num += 1;
+        slide_page = slide_num * 5;
+        $('.s_img_box1 .s_img1').css('opacity','0').stop().attr('src', `/img/menu2/sec01/img/menu2_01_${slide_page - 4}.jpg`).animate({opacity:1},1000);
+        $('.s_img_box1 .s_img2').css('opacity','0').stop().attr('src', `/img/menu2/sec01/img/menu2_01_${slide_page - 3}.jpg`).animate({opacity:1},1000);
+        $('.s_img_box1 .s_img3').css('opacity','0').stop().attr('src', `/img/menu2/sec01/img/menu2_01_${slide_page - 2}.jpg`).animate({opacity:1},1000);
+        $('.s_img_box1 .s_img4').css('opacity','0').stop().attr('src', `/img/menu2/sec01/img/menu2_01_${slide_page - 1}.jpg`).animate({opacity:1},1000);
+        $('.s_img_box1 .s_img5').css('opacity','0').stop().attr('src', `/img/menu2/sec01/img/menu2_01_${slide_page}.jpg`).animate({opacity:1},1000);
+        let main_url = $('.s_img_box1 .s_img1').attr('src');
+        $('.install_img1').css('opacity','0').attr('src', `${main_url}`).animate({opacity:1},1000);
+    }   else if(slide_num == 2) {
+        slide_num += 1;
+        slide_page = slide_num * 5;
+        $('.s_img_box1 .s_img1').css('opacity','0').stop().attr('src', `/img/menu2/sec01/img/menu2_01_${slide_page - 4}.jpg`).animate({opacity:1},1000);
+        $('.s_img_box1 .s_img2').css('opacity','0').stop().attr('src', `/img/menu2/sec01/img/menu2_01_${slide_page - 3}.jpg`).animate({opacity:1},1000);
+        $('.s_img_box1 .s_img3').css('opacity','0');
+        $('.s_img_box1 .s_img4').css('opacity','0');
+        $('.s_img_box1 .s_img5').css('opacity','0');
+        let main_url = $('.s_img_box1 .s_img1').attr('src');
+        $('.install_img1').css('opacity','0').attr('src', `${main_url}`).animate({opacity:1},1000);
+    }   else {
+        return;
+    }
+}
+function slide_img_prev() {
+    if(slide_num > 1) {
+        slide_num -= 1;
+        slide_page = slide_num * 5;
+        $('.s_img_box1 .s_img1').css('opacity','0').stop().attr('src', `/img/menu2/sec01/img/menu2_01_${slide_page - 4}.jpg`).animate({opacity:1},1000);
+        $('.s_img_box1 .s_img2').css('opacity','0').stop().attr('src', `/img/menu2/sec01/img/menu2_01_${slide_page - 3}.jpg`).animate({opacity:1},1000);
+        $('.s_img_box1 .s_img3').css('opacity','0').stop().attr('src', `/img/menu2/sec01/img/menu2_01_${slide_page - 2}.jpg`).animate({opacity:1},1000);
+        $('.s_img_box1 .s_img4').css('opacity','0').stop().attr('src', `/img/menu2/sec01/img/menu2_01_${slide_page - 1}.jpg`).animate({opacity:1},1000);
+        $('.s_img_box1 .s_img5').css('opacity','0').stop().attr('src', `/img/menu2/sec01/img/menu2_01_${slide_page}.jpg`).animate({opacity:1},1000);
+        let main_url = $('.s_img_box1 .s_img1').attr('src');
+        $('.install_img1').css('opacity','0').attr('src', `${main_url}`).animate({opacity:1},1000);
+    } else {
+        return;
+    }
+}
+$(".next1").on('click', slide_img_next);
+$(".prev1").on('click', slide_img_prev);
+
+let slide_num2 = 1;
+let slide_page2 = 0;
+function slide_img_next2() {
+    if(slide_num2 < 2) {
+        slide_num2 += 1;
+        slide_page2 = slide_num2 * 5;
+        $('.s_img_box2 .s_img1').css('opacity','0').stop().attr('src', `/img/menu2/sec01/img2/menu2_02_${slide_page2 - 4}.jpg`).animate({opacity:1},1000);
+        $('.s_img_box2 .s_img2').css('opacity','0').stop().attr('src', `/img/menu2/sec01/img2/menu2_02_${slide_page2 - 3}.jpg`).animate({opacity:1},1000);
+        $('.s_img_box2 .s_img3').css('opacity','0').stop().attr('src', `/img/menu2/sec01/img2/menu2_02_${slide_page2 - 2}.jpg`).animate({opacity:1},1000);
+        $('.s_img_box2 .s_img4').css('opacity','0').stop().attr('src', `/img/menu2/sec01/img2/menu2_02_${slide_page2 - 1}.jpg`).animate({opacity:1},1000);
+        $('.s_img_box2 .s_img5').css('opacity','0').stop().attr('src', `/img/menu2/sec01/img2/menu2_02_${slide_page2}.jpg`).animate({opacity:1},1000);
+        let main_url = $('.s_img_box2 .s_img1').attr('src');
+        $('.install_img2').css('opacity','0').attr('src', `${main_url}`).animate({opacity:1},1000);
+    }   else if(slide_num2 == 2) {
+        slide_num2 += 1;
+        slide_page2 = slide_num2 * 5;
+        $('.s_img_box2 .s_img1').css('opacity','0').stop().attr('src', `/img/menu2/sec01/img2/menu2_02_${slide_page2 - 4}.jpg`).animate({opacity:1},1000);
+        $('.s_img_box2 .s_img2').css('opacity','0').stop().attr('src', `/img/menu2/sec01/img2/menu2_02_${slide_page2 - 3}.jpg`).animate({opacity:1},1000);
+        $('.s_img_box2 .s_img3').css('opacity','0').stop().attr('src', `/img/menu2/sec01/img2/menu2_02_${slide_page2 - 2}.jpg`).animate({opacity:1},1000);
+        $('.s_img_box2 .s_img4').css('opacity','0');
+        $('.s_img_box2 .s_img5').css('opacity','0');
+        let main_url = $('.s_img_box2 .s_img1').attr('src');
+        $('.install_img2').css('opacity','0').attr('src', `${main_url}`).animate({opacity:1},1000);
+    }   else {
+        return;
+    }
+}
+function slide_img_prev2() {
+    if(slide_num2 > 1) {
+        slide_num2 -= 1;
+        slide_page2 = slide_num2 * 5;
+        $('.s_img_box2 .s_img1').css('opacity','0').stop().attr('src', `/img/menu2/sec01/img2/menu2_02_${slide_page2 - 4}.jpg`).animate({opacity:1},1000);
+        $('.s_img_box2 .s_img2').css('opacity','0').stop().attr('src', `/img/menu2/sec01/img2/menu2_02_${slide_page2 - 3}.jpg`).animate({opacity:1},1000);
+        $('.s_img_box2 .s_img3').css('opacity','0').stop().attr('src', `/img/menu2/sec01/img2/menu2_02_${slide_page2 - 2}.jpg`).animate({opacity:1},1000);
+        $('.s_img_box2 .s_img4').css('opacity','0').stop().attr('src', `/img/menu2/sec01/img2/menu2_02_${slide_page2 - 1}.jpg`).animate({opacity:1},1000);
+        $('.s_img_box2 .s_img5').css('opacity','0').stop().attr('src', `/img/menu2/sec01/img2/menu2_02_${slide_page2}.jpg`).animate({opacity:1},1000);
+        let main_url = $('.s_img_box2 .s_img1').attr('src');
+        $('.install_img2').css('opacity','0').attr('src', `${main_url}`).animate({opacity:1},1000);
+    } else {
+        return;
+    }
+}
+$(".next2").on('click', slide_img_next2);
+$(".prev2").on('click', slide_img_prev2);

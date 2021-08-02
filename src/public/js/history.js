@@ -192,3 +192,126 @@ function pop_img_prev2() {
 $(".pop_next2").on('click', pop_img_next2);
 $(".pop_prev2").on('click', pop_img_prev2);
 // 두번째 팝업 사진 넘기는 효과 - 현장기록 (비디오아트)
+
+function showPopup3() {
+    const popup = document.querySelector('#pop3');
+    popup.classList.remove('hide');
+}
+
+function closePopup3() {
+    const popup = document.querySelector('#pop3');
+    popup.classList.add('hide');
+}
+$(".install_card img").on('click', showPopup3);
+
+
+let pop_num3 = 1;
+let pop_page3 = 0;
+function pop_img_next3() {
+    if(pop_num3 < 6) {
+        pop_num3 += 1;
+        pop_page3 = pop_num3 * 6;
+        $('.pop3_bottom1').css('opacity','0').attr('src', `/img/menu7/sec02/install/pop/menu7_01_pop${pop_page3 - 5}.png`).animate({opacity:1},1000);
+        $('.pop3_bottom2').css('opacity','0').attr('src', `/img/menu7/sec02/install/pop/menu7_01_pop${pop_page3 - 4}.png`).animate({opacity:1},1000);
+        $('.pop3_bottom3').css('opacity','0').attr('src', `/img/menu7/sec02/install/pop/menu7_01_pop${pop_page3 - 3}.png`).animate({opacity:1},1000);
+        $('.pop3_bottom4').css('opacity','0').attr('src', `/img/menu7/sec02/install/pop/menu7_01_pop${pop_page3 - 2}.png`).animate({opacity:1},1000);
+        $('.pop3_bottom5').css('opacity','0').attr('src', `/img/menu7/sec02/install/pop/menu7_01_pop${pop_page3 - 1}.png`).animate({opacity:1},1000);
+        $('.pop3_bottom6').css('opacity','0').attr('src', `/img/menu7/sec02/install/pop/menu7_01_pop${pop_page3 - 0}.png`).animate({opacity:1},1000);
+        let main_url = $('.pop3_bottom1').attr('src');
+        $('.pop_main3').css('opacity','0').attr('src', `${main_url}`).animate({opacity:1},1000);
+    }   else if(pop_num3 == 6) {
+        pop_num3 += 1;
+        pop_page3 = pop_num3 * 6;
+        $('.pop3_bottom1').css('opacity','0').stop().attr('src', `/img/menu7/sec02/install/pop/menu7_01_pop${pop_page3 - 5}.png`).animate({opacity:1},1000);
+        $('.pop3_bottom2').css('opacity','0').stop().attr('src', `/img/menu7/sec02/install/pop/menu7_01_pop${pop_page3 - 4}.png`).animate({opacity:1},1000);
+        $('.pop3_bottom3').css('opacity','0').stop().attr('src', `/img/menu7/sec02/install/pop/menu7_01_pop${pop_page3 - 3}.png`).animate({opacity:1},1000);
+        $('.pop3_bottom4').css('opacity','0').stop().attr('src', `./img/menu7/sec02/install/pop/menu7_01_pop${pop_page3 - 2}.png`).animate({opacity:1},1000);
+        $('.pop3_bottom5').css('opacity','0');
+        $('.pop3_bottom6').css('opacity','0');
+        let main_url = $('.pop3_bottom1').attr('src');
+        $('.pop_main3').css('opacity','0').attr('src', `${main_url}`).animate({opacity:1},1000);
+    }   else {
+        return;
+    }
+}
+function pop_img_prev3() {
+    if(pop_num3 > 1) {
+        pop_num3 -= 1;
+        pop_page3 = pop_num3 * 6;
+        $('.pop3_bottom1').css('opacity','0').stop().attr('src', `/img/menu7/sec02/install/pop/menu7_01_pop${pop_page3 - 5}.png`).animate({opacity:1},1000);
+        $('.pop3_bottom2').css('opacity','0').stop().attr('src', `/img/menu7/sec02/install/pop/menu7_01_pop${pop_page3 - 4}.png`).animate({opacity:1},1000);
+        $('.pop3_bottom3').css('opacity','0').stop().attr('src', `/img/menu7/sec02/install/pop/menu7_01_pop${pop_page3 - 3}.png`).animate({opacity:1},1000);
+        $('.pop3_bottom4').css('opacity','0').stop().attr('src', `/img/menu7/sec02/install/pop/menu7_01_pop${pop_page3 - 2}.png`).animate({opacity:1},1000);
+        $('.pop3_bottom5').css('opacity','0').stop().attr('src', `/img/menu7/sec02/install/pop/menu7_01_pop${pop_page3 - 1}.png`).animate({opacity:1},1000);
+        $('.pop3_bottom6').css('opacity','0').stop().attr('src', `/img/menu7/sec02/install/pop/menu7_01_pop${pop_page3 - 0}.png`).animate({opacity:1},1000);
+        let main_url = $('.pop3_bottom1').attr('src');
+        $('.pop_main3').css('opacity','0').attr('src', `${main_url}`).animate({opacity:1},1000);
+    } else {
+        return;
+    }
+}
+$(".pop_next3").on('click', pop_img_next3);
+$(".pop_prev3").on('click', pop_img_prev3);
+// 세번째 팝업 사진 넘기는 효과 - 현장기록(전시)
+
+
+
+function showPopup4() {
+    const popup = document.querySelector('#pop4');
+    popup.classList.remove('hide');
+}
+
+function closePopup4() {
+    const popup = document.querySelector('#pop4');
+    popup.classList.add('hide');
+}
+$(".display_card img").on('click', showPopup4);
+
+
+let pop_num4 = 1;
+let pop_page4 = 0;
+function pop_img_next4() {
+    if(pop_num4 < 2) {
+        pop_num4 += 1;
+        pop_page4 = pop_num4 * 6;
+        $('.pop4_bottom1').css('opacity','0').attr('src', `/img/menu7/sec02/display/pop/menu7_03_pop${pop_page4 - 5}.png`).animate({opacity:1},1000);
+        $('.pop4_bottom2').css('opacity','0').attr('src', `/img/menu7/sec02/display/pop/menu7_03_pop${pop_page4 - 4}.png`).animate({opacity:1},1000);
+        $('.pop4_bottom3').css('opacity','0').attr('src', `/img/menu7/sec02/display/pop/menu7_03_pop${pop_page4 - 3}.png`).animate({opacity:1},1000);
+        $('.pop4_bottom4').css('opacity','0').attr('src', `/img/menu7/sec02/display/pop/menu7_03_pop${pop_page4 - 2}.png`).animate({opacity:1},1000);
+        $('.pop4_bottom5').css('opacity','0').attr('src', `/img/menu7/sec02/display/pop/menu7_03_pop${pop_page4 - 1}.png`).animate({opacity:1},1000);
+        $('.pop4_bottom6').css('opacity','0').attr('src', `/img/menu7/sec02/display/pop/menu7_03_pop${pop_page4 - 0}.png`).animate({opacity:1},1000);
+        let main_url = $('.pop4_bottom1').attr('src');
+        $('.pop_main4').css('opacity','0').attr('src', `${main_url}`).animate({opacity:1},1000);
+    }   else if(pop_num4 == 2) {
+        pop_num4 += 1;
+        pop_page4 = pop_num4 * 6;
+        $('.pop4_bottom1').css('opacity','0').stop().attr('src', `/img/menu7/sec02/display/pop/menu7_03_pop${pop_page4 - 5}.png`).animate({opacity:1},1000);
+        $('.pop4_bottom2').css('opacity','0').stop().attr('src', `/img/menu7/sec02/display/pop/menu7_03_pop${pop_page4 - 4}.png`).animate({opacity:1},1000);
+        $('.pop4_bottom3').css('opacity','0').stop().attr('src', `/img/menu7/sec02/display/pop/menu7_03_pop${pop_page4 - 3}.png`).animate({opacity:1},1000);
+        $('.pop4_bottom4').css('opacity','0');
+        $('.pop4_bottom5').css('opacity','0');
+        $('.pop4_bottom6').css('opacity','0');
+        let main_url = $('.pop4_bottom1').attr('src');
+        $('.pop_main4').css('opacity','0').attr('src', `${main_url}`).animate({opacity:1},1000);
+    }   else {
+        return;
+    }
+}
+function pop_img_prev4() {
+    if(pop_num4 > 1) {
+        pop_num4 -= 1;
+        pop_page4 = pop_num4 * 6;
+        $('.pop4_bottom1').css('opacity','0').stop().attr('src', `/img/menu7/sec02/display/pop/menu7_03_pop${pop_page4 - 5}.png`).animate({opacity:1},1000);
+        $('.pop4_bottom2').css('opacity','0').stop().attr('src', `/img/menu7/sec02/display/pop/menu7_03_pop${pop_page4 - 4}.png`).animate({opacity:1},1000);
+        $('.pop4_bottom3').css('opacity','0').stop().attr('src', `/img/menu7/sec02/display/pop/menu7_03_pop${pop_page4 - 3}.png`).animate({opacity:1},1000);
+        $('.pop4_bottom4').css('opacity','0').stop().attr('src', `/img/menu7/sec02/display/pop/menu7_03_pop${pop_page4 - 2}.png`).animate({opacity:1},1000);
+        $('.pop4_bottom5').css('opacity','0').stop().attr('src', `/img/menu7/sec02/display/pop/menu7_03_pop${pop_page4 - 1}.png`).animate({opacity:1},1000);
+        $('.pop4_bottom6').css('opacity','0').stop().attr('src', `/img/menu7/sec02/display/pop/menu7_03_pop${pop_page4 - 0}.png`).animate({opacity:1},1000);
+        let main_url = $('.pop4_bottom1').attr('src');
+        $('.pop_main4').css('opacity','0').attr('src', `${main_url}`).animate({opacity:1},1000);
+    } else {
+        return;
+    }
+}
+$(".pop_next4").on('click', pop_img_next4);
+$(".pop_prev4").on('click', pop_img_prev4);
