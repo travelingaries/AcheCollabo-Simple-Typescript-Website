@@ -3,8 +3,8 @@ import path from 'path';
 import express, {NextFunction, Request, RequestHandler, Response} from 'express';
 
 // logger
-import Logger from 'jet-logger' ;
-const logger = new Logger();
+// import Logger from 'jet-logger' ;
+// const logger = new Logger();
 
 const app: express.Express = express();
 app.use(express.json() as RequestHandler);
@@ -41,5 +41,5 @@ app.get('/', (req: Request, res: Response) => {
 // Start the server
 const port = Number(process.env.PORT || 3000);
 app.listen(port, () => {
-    logger.info('Express server started on port: ' + port);
+//    logger.info('Express server started on port: ' + port);
 });

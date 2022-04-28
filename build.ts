@@ -6,8 +6,8 @@ import fs from 'fs-extra';
 import Logger from 'jet-logger';
 
 // Setup logger
-const logger = new Logger();
-logger.timestamp = false;
+// const logger = new Logger();
+// logger.timestamp = false;
 
 (async () => {
     try {
@@ -17,7 +17,7 @@ logger.timestamp = false;
         await copy('./src/public', './dist/src/public');
         await copy('./src/views', './dist/src/views');
     } catch (err) {
-        logger.err(err);
+//        logger.err(err);
     }
 })();
 
