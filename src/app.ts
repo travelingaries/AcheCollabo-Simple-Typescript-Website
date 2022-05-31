@@ -39,7 +39,7 @@ app.get('/', (req: Request, res: Response) => {
 });
 
 // Start the server
-const PORT = Number(process.env.PORT || 3000);
-app.listen(PORT, () => {
+const port = Number(process.env.PORT || 3000);
+app.listen(port, () => {
 //    logger.info('Express server started on port: ' + PORT);
 });
